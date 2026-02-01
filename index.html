@@ -8,7 +8,7 @@
         /* Hintergrund für die Home-Sektion */
 #home {
     background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
-                      url('dein-home-bild.jpg'); /* Pfad zu deinem Bild */
+                      url('imgP1.jpg'); /* Pfad zu deinem Bild */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Optional: Parallax-Effekt */
@@ -19,7 +19,7 @@
 /* Hintergrund für die Produkte-Sektion */
 #produkte {
     background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
-                      url('dein-produkte-bild.jpg'); /* Pfad zu deinem Bild */
+                      url('imgP2.avif'); /* Pfad zu deinem Bild */
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -101,24 +101,37 @@
         footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #64748b; }
     </style>
 </head>
+    <div id="home" class="section active">
+    <div class="content-wrapper"> <div class="hero">
+            <h1>Willkommen bei MONO 
+                </h1>
+            </div>
+    </div>
+</div>
+
+<div id="produkte" class="section">
+    <div class="content-wrapper"> <h2 style="text-align: center;">Unsere Produkte</h2>
+        </div>
+</div>
+    
 <body>
 
     <nav>
-        <div class="logo">Moritz-Projekt</div>
+        <div class="logo">MONO</div>
         <div class="nav-links">
-            <button onclick="showSection('home')">Home</button>
-            <button onclick="showSection('produkte')">Produkte</button>
+            <button onclick="showSection('home')">START</button>
+            <button onclick="showSection('produkte')">PRODUKTE</button>
         </div>
     </nav>
 
     <div id="home" class="section active">
         <div class="hero">
-            <h1>Willkommen auf meiner Webseite</h1>
-            <p>Hier findest du einen Überblick über meine Projekte und Kontaktmöglichkeiten.</p>
+            <h1>Willkommen bei MONO</h1>
+            <p>Kontakt</p>
             
             <div class="contact-box">
                 <h3>📧 Kontakt & Info</h3>
-                <p><strong>E-Mail:</strong> dein-name@beispiel.de</p>
+                <p><strong>E-Mail:</strong> moritz.nonn@gmx.de</p>
                 <p><strong>Standort:</strong> Deutschland</p>
                 <p><strong>Status:</strong> Verfügbar für neue Projekte</p>
             </div>
@@ -131,12 +144,12 @@
             <div class="product-card">
                 <h3>Premium Produkt A</h3>
                 <p>Ein hochwertiges Tool für deine tägliche Arbeit.</p>
-                <p class="price">49,99 €</p>
+                <p class="price">Auf Anfrage</p>
             </div>
             <div class="product-card">
                 <h3>Digital Guide B</h3>
                 <p>Alles, was du über Webentwicklung wissen musst.</p>
-                <p class="price">19,00 €</p>
+                <p class="price">Auf Anfrage</p>
             </div>
             <div class="product-card">
                 <h3>Service Paket C</h3>
